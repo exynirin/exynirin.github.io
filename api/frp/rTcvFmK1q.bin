@@ -1,0 +1,4 @@
+adb shell content insert --uri content://settings/secure --bind name:s:user_setup_complete --bind value:s:1
+adb shell settings put global setup_wizard_has_run 1
+adb shell settings put secure user_setup_complete 1
+adb shell settings put global device_provisioned 1
